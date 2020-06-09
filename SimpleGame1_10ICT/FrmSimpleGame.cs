@@ -33,7 +33,7 @@ namespace SimpleGame1_10ICT
             dx = 5;	//Speed of the ball in the x direction is 5
             dy = 5;	//Speed of the ball in the y direction is 5
             score = 0; //The initial score is 0 
-            lives = 3;	//The initial number of lives is 3
+            lives = 5;	//The initial number of lives is 3
 
         }
 

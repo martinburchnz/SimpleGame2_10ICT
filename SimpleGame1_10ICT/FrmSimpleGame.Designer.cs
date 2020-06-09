@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSimpleGame));
             this.lblScore = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblLives = new System.Windows.Forms.Label();
@@ -128,7 +129,7 @@
             // 
             // imgBall
             // 
-            this.imgBall.Image = global::SimpleGame1_10ICT.Properties.Resources.Ball1;
+            this.imgBall.Image = ((System.Drawing.Image)(resources.GetObject("imgBall.Image")));
             this.imgBall.Location = new System.Drawing.Point(1, 1);
             this.imgBall.Name = "imgBall";
             this.imgBall.Size = new System.Drawing.Size(10, 10);
@@ -137,7 +138,7 @@
             // 
             // imgPaddle
             // 
-            this.imgPaddle.Image = global::SimpleGame1_10ICT.Properties.Resources.paddle;
+            this.imgPaddle.Image = ((System.Drawing.Image)(resources.GetObject("imgPaddle.Image")));
             this.imgPaddle.Location = new System.Drawing.Point(260, 340);
             this.imgPaddle.Name = "imgPaddle";
             this.imgPaddle.Size = new System.Drawing.Size(50, 10);
