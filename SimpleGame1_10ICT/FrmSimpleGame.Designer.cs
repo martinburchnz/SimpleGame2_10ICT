@@ -104,7 +104,7 @@
             this.lblLives.Name = "lblLives";
             this.lblLives.Size = new System.Drawing.Size(26, 27);
             this.lblLives.TabIndex = 7;
-            this.lblLives.Text = "3";
+            this.lblLives.Text = "5";
             // 
             // label2
             // 
