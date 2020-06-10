@@ -160,12 +160,6 @@
             this.TmrBall.Interval = 20;
             this.TmrBall.Tick += new System.EventHandler(this.TmrBall_Tick);
             // 
-            // TmrPaddle
-            // 
-            this.TmrPaddle.Enabled = true;
-            this.TmrPaddle.Interval = 5;
-            this.TmrPaddle.Tick += new System.EventHandler(this.TmrPaddle_Tick);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -351,6 +345,7 @@
             this.Load += new System.EventHandler(this.FrmSimpleGame_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmSimpleGame_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FrmSimpleGame_KeyUp);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmSimpleGame_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.imgBall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgPaddle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
