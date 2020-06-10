@@ -50,29 +50,34 @@ namespace SimpleGame1_10ICT
 
         }
 
-        private void TmrPaddle_Tick(object sender, EventArgs e)
+        private void FrmSimpleGame_MouseMove(object sender, MouseEventArgs e)
         {
-            //if right arrow pressed and paddle has not passed 
-            //the right side of the form
-            if (right && (x1 + 50 < this.ClientSize.Width))
-            {
-                x1 += 5;//add 5 to x1
-                //moves the paddle to the right 5
-                imgPaddle.Location = new Point(x1, this.ClientSize.Height - 30);
-            }
-           
-  		// if left arrow key pressed and paddle has not passed
-           	//the left side of form
-            if (left && (x1 > 0))
-            {
-                //move paddle 5 to the left
-                x1 -= 5;
-                imgPaddle.Location = new Point(x1, this.ClientSize.Height - 30);
-    }
+            imgPaddle.Left = e.X;
+        }
 
-}
+        //    private void TmrPaddle_Tick(object sender, EventArgs e)
+        //    {
+        //        //if right arrow pressed and paddle has not passed 
+        //        //the right side of the form
+        //        if (right && (x1 + 50 < this.ClientSize.Width))
+        //        {
+        //            x1 += 5;//add 5 to x1
+        //            //moves the paddle to the right 5
+        //            imgPaddle.Location = new Point(x1, this.ClientSize.Height - 30);
+        //        }
 
-private void TmrBall_Tick(object sender, EventArgs e)
+        //// if left arrow key pressed and paddle has not passed
+        //       	//the left side of form
+        //        if (left && (x1 > 0))
+        //        {
+        //            //move paddle 5 to the left
+        //            x1 -= 5;
+        //            imgPaddle.Location = new Point(x1, this.ClientSize.Height - 30);
+        //}
+
+        //}
+
+        private void TmrBall_Tick(object sender, EventArgs e)
         {
             // move the ball's location to a new point 
             x = x + dx;//add to the x value
